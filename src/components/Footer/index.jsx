@@ -18,7 +18,7 @@ export default function Footer() {
         <img src="assets/google-plus.png" alt="google plus icon" />
       </div>
       <p>
-        Copyright 2022 c <span>Lucas Silverio</span>
+        Copyright 2022 &copy; <span>Lucas Silverio</span>
       </p>
     </footer>
   );

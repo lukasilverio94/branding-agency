@@ -7,7 +7,7 @@ export default function BannerSection() {
 
       <div className="banner-content">
         <p>branding / ui / ux /tecnologia</p>
-        <h2>Agencia de Branding</h2>
+        <h2>Agência de Branding</h2>
         <span>e design digital</span>
       </div>
     </section>

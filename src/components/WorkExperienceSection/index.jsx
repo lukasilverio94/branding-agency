@@ -2,6 +2,30 @@ import Card from "../Card";
 import "./style.css";
 
 export default function WorkExperienceSection() {
+  // BANCO DE DADOS CARDS:
+  const workExperienceData = [
+    {
+      date: "JUNHO 2012 - 2016",
+      title: "Web Designer",
+      company: "Pied Piper StartUp.",
+      paragraph:
+        "Criação de Landing pages, sites institucionais e E-commerces completamente personalizados e otimizados para buscadores",
+    },
+    {
+      date: "AGOSTO 2012 - 2016",
+      title: "Product Designer",
+      company: "E Corp",
+      paragraph:
+        "Criação de modelos estratégicos de conversão identificando o cliente e mapeando toda a sua jornada de compra",
+    },
+    {
+      date: "FEVEREIRO 2019 - 2021",
+      title: "Digital Consulting",
+      company: "Arasaka Inc.",
+      paragraph:
+        "Consultoria em estratégias digitais para todas as etapas do ciclo do projeto, desde a definição inicial até a execução",
+    },
+  ];
   return (
     <main id="work-experience-section">
       <div className="header-work-experiences">
@@ -14,24 +38,15 @@ export default function WorkExperienceSection() {
       </div>
       {/* cards */}
       <div className="cards">
-        <Card
-          date="JUNHO 2012 - 2016"
-          title="Web Designer"
-          company="Pied Piper StartUp."
-          paragraph="Criação de Landing pages, sites institucionais e E-commerces completamente personalizados e otimizados para buscadores"
-        />
-        <Card
-          date="AGOSTO 2012 - 2016"
-          title="Product Designer"
-          company="E Corp"
-          paragraph="Criação de modelos estratégicos de conversão identificando o cliente e mapeando toda a sua jornada de compra"
-        />
+      {workExperienceData.map((item, index) => ( //map() para percorrer os itens da coleção de arrays e aplica uma função a cada um deles
           <Card
-          date="FEVEREIRO 2019 - 2021"
-          title="Digital Consulting"
-          company="Arasaka Inc."
-          paragraph="Consultoria em estratégias digitais para todas as etapas do ciclo do projeto, desde a definição inicial até a execução"
-        />
+            key={index} // usar único key por card.
+            date={item.date}
+            title={item.title}
+            company={item.company}
+            paragraph={item.paragraph}
+          />
+        ))}
       </div>
     </main>
   );

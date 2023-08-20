@@ -3,7 +3,7 @@ import "./style.css";
 
 export default function WorkExperienceSection() {
   return (
-    <section id="work-experience-section">
+    <main id="work-experience-section">
       <div className="header-work-experiences">
         <h2>Experiências De Trabalho</h2>
         <p>
@@ -18,6 +18,6 @@ export default function WorkExperienceSection() {
         <Card />
         <Card />
       </div>
-    </section>
+    </main>
   );
 }

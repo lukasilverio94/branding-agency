@@ -1,13 +1,12 @@
 import './style.css'
-export default function Card() {
+export default function Card(props) {
   return (
     <div className="card">
-      <p className="card-date">fevereiro 2019 - 2021</p>
-      <h2>Digital Consulting</h2>
-      <p>Arasaka Inc.</p>
+      <p className="card-date">{props.date}</p>
+      <h2>{props.title}</h2>
+      <p>{props.company}</p>
       <p>
-        Consultoria em estratégias digitais para todas as etapas do ciclo do
-        projeto, desde a definição inicial até a execução"
+        {props.paragraph}
       </p>
     </div>
   );

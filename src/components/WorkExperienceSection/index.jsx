@@ -14,9 +14,24 @@ export default function WorkExperienceSection() {
       </div>
       {/* cards */}
       <div className="cards">
-        <Card />
-        <Card />
-        <Card />
+        <Card
+          date="JUNHO 2012 - 2016"
+          title="Web Designer"
+          company="Pied Piper StartUp."
+          paragraph="Criação de Landing pages, sites institucionais e E-commerces completamente personalizados e otimizados para buscadores"
+        />
+        <Card
+          date="AGOSTO 2012 - 2016"
+          title="Product Designer"
+          company="E Corp"
+          paragraph="Criação de modelos estratégicos de conversão identificando o cliente e mapeando toda a sua jornada de compra"
+        />
+          <Card
+          date="FEVEREIRO 2019 - 2021"
+          title="Digital Consulting"
+          company="Arasaka Inc."
+          paragraph="Consultoria em estratégias digitais para todas as etapas do ciclo do projeto, desde a definição inicial até a execução"
+        />
       </div>
     </main>
   );

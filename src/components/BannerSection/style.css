@@ -1,0 +1,44 @@
+#banner-container {
+  height: 95vh;
+  padding-top: 5.5rem;
+  display: flex;
+  position: relative;
+}
+.img-banner {
+  /* background-image: url('../../assets/banner.png');*/
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.bg-light-mode {
+  background-color: var(--white);
+}
+
+/* text container banner */
+.banner-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1.2rem;
+  background-color: var(--bg-light);
+  color: var(--text-banner);
+}
+
+.banner-content h2 {
+    font-size: 2.9rem;
+    font-weight: 500;
+}
+.banner-content p {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: .9rem;
+}
+
+.banner-content span {
+    font-weight: 800;
+    font-size: 2rem;
+}

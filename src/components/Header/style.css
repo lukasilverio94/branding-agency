@@ -1,0 +1,34 @@
+header {
+  width: 100%;
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+}
+
+.light-mode {
+  background-color: var(--white);
+}
+header .logo-header {
+  max-height: 35px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+}
+
+.btn-light-mode {
+  background-color: var(--white);
+  border-radius: 50%;
+  border: 2px solid #747272;
+}
+
+.btn img {
+  width: 25px;
+  height: 25px;
+}

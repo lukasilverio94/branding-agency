@@ -1,6 +1,8 @@
+import "./style.css";
+
 export default function BannerSection() {
   return (
-    <section>
+    <section id="banner-container" className="bg-light-mode">
       <div className="img-banner">{/* banner img go here at css */}</div>
 
       <div className="banner-content">

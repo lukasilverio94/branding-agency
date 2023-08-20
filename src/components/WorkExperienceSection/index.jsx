@@ -1,8 +1,9 @@
 import Card from "../Card";
+import "./style.css";
 
 export default function WorkExperienceSection() {
   return (
-    <section>
+    <section id="work-experience-section">
       <div className="header-work-experiences">
         <h2>Experiências De Trabalho</h2>
         <p>

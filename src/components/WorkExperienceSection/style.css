@@ -1,0 +1,45 @@
+#work-experience-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+  background-color: var(--text-secondary);
+  text-align: center;
+  padding: 3rem 2.5rem;
+}
+
+.header-work-experiences h2 {
+  font-size: 2.3rem;
+  padding-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
+  color: var(--text-primary);
+  position: relative;
+}
+/* yellow line under h2 */
+.header-work-experiences h2::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10%;
+  height: 3px;
+  background-color: var(--yellow);
+}
+
+.header-work-experiences p {
+    padding: 1rem;
+    color: var(--card-text-paragraph);
+}
+
+/* CARDS CONTAINER */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0.5rem 1.5rem 3rem 1.5rem;
+    text-align: start;
+    /* gap: 1.5rem; */
+}

@@ -19,3 +19,7 @@
   --bg-work-section: #393838;
   --bg-dark: #252525;
 }
+
+body {
+  line-height: 1.7;
+}

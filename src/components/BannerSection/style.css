@@ -1,4 +1,3 @@
-
 #banner-container {
   height: 95vh;
   padding-top: 5.5rem;
@@ -6,9 +5,11 @@
   position: relative;
 }
 
-/* .img-banner { 
+/* .img-banner {
+  background-image: url("../../assets/banner.png"); 
   object-fit: cover;
   width: 50%;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -35,6 +36,7 @@
   font-size: 3.3rem;
   font-weight: 500;
 }
+
 .banner-content p {
   text-transform: uppercase;
   font-weight: 500;

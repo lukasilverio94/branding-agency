@@ -60,11 +60,11 @@
     flex-direction: column;
     padding: 0;
   }
-  .card {
+  #card {
     padding: 0 0.5rem 0 1rem;
   }
 
-  .card:hover {
+  #card:hover {
     background-color: transparent;
     border: 1px solid #ccc;
   }
@@ -72,14 +72,14 @@
 
 /* SCREEN MAX 375PX ============================================== */
 @media (max-width: 375px) {
-  .card {
+  #card {
     line-height: 1.9;
   }
 
-  .card p {
+  #card p {
     font-size: 1.1rem;
   }
-  .card p:last-child {
+  #card p:last-child {
     margin-top: 1.3rem;
   }
 }

@@ -4,7 +4,7 @@ export default function Footer(props) {
   return (
     <footer className={props.isDarkMode ? "footer-light-mode" : "footer-dark-mode"}>
       <img className="footer-logo" src="assets/logo.png" alt="logo" />
-      <p>
+      <p className="paragraph-limit">
         Ajudamos a criar uma personalidade digital construindo sua marca no
         ambiente online utilizando estratégias, ferramentas e tecnologias
         personalizadas.
@@ -17,7 +17,7 @@ export default function Footer(props) {
         <img src="assets/behance.png" alt="behance icon" />
         <img src="assets/google-plus.png" alt="google plus icon" />
       </div>
-      <div>
+      <div className="copyright-container">
         <p className="copyright">
           Copyright 2022 &copy; <span>Lucas Silverio</span>
         </p>

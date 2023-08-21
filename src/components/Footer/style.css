@@ -5,21 +5,28 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 3rem;
-  padding: 5rem 0 .5rem 0;
+  padding: 5rem 0 0.5rem 0;
 }
 
 footer p {
-  max-width: 600px;
   padding: 0 1.5rem;
   text-align: center;
   font-weight: 400;
   color: var(--card-text-paragraph);
 }
+footer .paragraph-limit {
+max-width: 700px;
+}
+
+
 footer .footer-logo {
   width: auto;
   height: auto;
 }
 
+.copyright-container {
+  width: 100%;
+}
 .copyright {
   width: 100%;
   padding: 1rem 0;

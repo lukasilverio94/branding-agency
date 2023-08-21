@@ -47,6 +47,7 @@ export default function WorkExperienceSection() {
             paragraph={item.paragraph}
           />
         ))}
+        
       </div>
     </main>
   );

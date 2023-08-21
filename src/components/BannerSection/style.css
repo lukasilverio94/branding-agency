@@ -1,17 +1,18 @@
+
 #banner-container {
   height: 95vh;
   padding-top: 5.5rem;
   display: flex;
   position: relative;
 }
-.img-banner {
-  
+
+/* .img-banner { 
+  object-fit: cover;
   width: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  object-fit: cover;
-}
+} */
 
 .bg-light-mode {
   background-color: var(--white);
@@ -44,4 +45,31 @@
 .banner-content span {
   font-weight: 900;
   font-size: 2.4rem;
+}
+
+/* SCREEN MAX 768PX ============================================== */
+@media (max-width: 768px) {
+  #banner-container {
+    height: 85vh;
+  }
+  .banner-content {
+    width: 100%;
+    padding-left: 2rem;
+  }
+  .img-banner {
+    display: none;
+  }
+}
+
+/* SCREEN MAX 375px ============================================== */
+@media (max-width: 400px) {
+  .banner-content h2 {
+    width: 100%;
+    margin: 0.8rem 0 0.8rem 0;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .banner-content span {
+    font-size: 2.7rem;
+  }
 }

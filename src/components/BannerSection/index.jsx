@@ -1,22 +1,20 @@
+import bannerImage from "../../imageBanner/banner.png"; // Use relative import path
 import "./style.css";
 
 export default function BannerSection() {
-
-  const backgroundImageUrl = `${process.env.PUBLIC_URL}/assets/banner.png`;
-
   return (
     <section id="banner-container" className="bg-light-mode">
       <div
         className="img-banner"
-         style={{
-           backgroundImage: {backgroundImageUrl},
-           backgroundRepeat: "no-repeat",
-           backgroundPosition: "center",
-           backgroundRepeat: "no-repeat",
-           backgroundSize: "cover",
-           width: "50%",
-           height: "100%",
-         }}
+        style={{
+          backgroundImage: `url(${bannerImage})`,
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          width: "50%",
+          objectFit: "cover",
+        }}
       >
         {/* banner img go here at css */}
       </div>

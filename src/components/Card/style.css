@@ -61,6 +61,12 @@
     border: none;
   }
 }
+/* SCREEN MAX 880px ============================================== */
+@media (max-width: 880px){
+  .cards {
+    flex-direction: column;
+  }
+}
 /* SCREEN MAX 768PX ============================================== */
 @media (max-width: 768px) {
   .cards {

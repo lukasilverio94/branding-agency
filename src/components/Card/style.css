@@ -8,18 +8,12 @@
   flex: 1;
   flex-basis: calc(33% -10px);
   padding: 3rem 1.2rem;
-  border: 1px solid #ccc;
-}
-
-.card p {
-  color: var(--card-text-paragraph);
 }
 
 .card p:last-child {
   margin-top: 0.7rem;
 }
 .card h2 {
-  color: var(--text-primary);
   font-weight: 800;
   font-size: 1.7rem;
 }
@@ -32,6 +26,31 @@
   background-color: var(--yellow);
   border: 2px solid #edecec;
   box-shadow: none;
+}
+
+/* DARK AND LIGHT MODES */
+.card-light-mode {
+  border: 1px solid #edecec;
+}
+
+.card-light-mode h2 {
+  color: var(--text-primary);
+}
+
+.card-light-mode p {
+  color: var(--card-text-paragraph);
+}
+
+.card-dark-mode {
+  border: 1px solid #ffffff0d;
+}
+
+.card-dark-mode h2 {
+  color: #ffffff;
+}
+
+.card-dark-mode p {
+  color: var(--card-text);
 }
 
 /* SCREEN MAX 768PX ============================================== */

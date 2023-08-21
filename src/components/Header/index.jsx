@@ -7,9 +7,10 @@ export default function Header() {
   const moonIcon = "assets/moon.png";
   const sunIcon = "assets/sun.png";
 
-  const toggleDarkMode = () => {
+   const toggleDarkMode = () => {
     setIsDarkmode(!isDarkMode);
   };
+
   return (
     <header className={isDarkMode ? "dark-mode" : "light-mode"}>
       <img className="logo-header" src="assets/logo.png" alt="Logo" />

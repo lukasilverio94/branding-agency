@@ -2,7 +2,7 @@ import "./style.css";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="footer-dark-mode">
       <img className="footer-logo" src="assets/logo.png" alt="logo" />
       <p>
         Ajudamos a criar uma personalidade digital construindo sua marca no
@@ -17,9 +17,11 @@ export default function Footer() {
         <img src="assets/behance.png" alt="behance icon" />
         <img src="assets/google-plus.png" alt="google plus icon" />
       </div>
-      <p>
-        Copyright 2022 &copy; <span>Lucas Silverio</span>
-      </p>
+      <div>
+        <p className="copyright">
+          Copyright 2022 &copy; <span>Lucas Silverio</span>
+        </p>
+      </div>
     </footer>
   );
 }

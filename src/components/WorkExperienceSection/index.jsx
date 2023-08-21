@@ -31,8 +31,8 @@ export default function WorkExperienceSection() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   return (
-    <main id="work-experience-section" className={isDarkMode ? "main-dark-mode" : "main-light-mode"}>
-      <div id="header-work-experiences" className={isDarkMode ? "container-dark-mode" : "container-light-mode"}>
+    <main id="work-experience-section" className="main-dark-mode">
+      <div id="header-work-experiences" className="container-dark-mode">
         <h2>Experiências De Trabalho</h2>
         <p>
           Há mais de 10 anos no mercado de Branding, Desing Gráfico, Criação de

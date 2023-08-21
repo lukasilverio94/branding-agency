@@ -1,7 +1,7 @@
 import './style.css'
 export default function Card(props) {
   return (
-    <div className="card">
+    <div className="card card-dark-mode">
       <p className="card-date">{props.date}</p>
       <h2>{props.title}</h2>
       <p>{props.company}</p>

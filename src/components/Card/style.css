@@ -54,6 +54,13 @@
   color: var(--card-text);
 }
 
+/* SCREEN MAX 1024px ============================================== */
+@media (max-width: 1024px){
+  #card:hover {
+    background-color: transparent;
+    border: none;
+  }
+}
 /* SCREEN MAX 768PX ============================================== */
 @media (max-width: 768px) {
   .cards {
@@ -66,7 +73,7 @@
 
   #card:hover {
     background-color: transparent;
-    border: 1px solid #ccc;
+    border: none;
   }
 }
 
@@ -81,5 +88,8 @@
   }
   #card p:last-child {
     margin-top: 1.3rem;
+  }
+  .card-dark-mode:hover {
+    border: none;
   }
 }

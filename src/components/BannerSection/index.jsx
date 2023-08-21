@@ -3,7 +3,7 @@ import "./style.css";
 
 export default function BannerSection() {
   return (
-    <section id="banner-container" className="bg-light-mode">
+    <section id="banner-container" className="bg-dark-mode">
       <div
         className="img-banner"
         style={{

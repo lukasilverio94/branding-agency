@@ -1,3 +1,4 @@
+import React, {useState} from 'react';
 import Card from "../Card";
 import "./style.css";
 
@@ -26,9 +27,12 @@ export default function WorkExperienceSection() {
         "Consultoria em estratégias digitais para todas as etapas do ciclo do projeto, desde a definição inicial até a execução",
     },
   ];
+
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
   return (
-    <main id="work-experience-section">
-      <div className="header-work-experiences">
+    <main id="work-experience-section" className={isDarkMode ? "main-dark-mode" : "main-light-mode"}>
+      <div id="header-work-experiences" className={isDarkMode ? "container-dark-mode" : "container-light-mode"}>
         <h2>Experiências De Trabalho</h2>
         <p>
           Há mais de 10 anos no mercado de Branding, Desing Gráfico, Criação de

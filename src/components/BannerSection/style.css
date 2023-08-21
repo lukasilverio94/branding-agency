@@ -19,6 +19,10 @@
   background-color: var(--white);
 }
 
+.bg-dark-mode {
+  background-color: var(--bg-dark);
+}
+
 /* text container banner */
 .banner-content {
   width: 50%;

@@ -7,12 +7,16 @@ header {
   position: fixed;
   z-index: 1;
 }
+header .logo-header {
+  max-height: 35px;
+}
 
 .light-mode {
   background-color: var(--white);
 }
-header .logo-header {
-  max-height: 35px;
+
+.dark-mode {
+  background-color: var(--bg-dark);
 }
 
 .btn {
@@ -24,8 +28,14 @@ header .logo-header {
 
 .btn-light-mode {
   background-color: var(--white);
-  border-radius: 50%;
   border: 2px solid #747272;
+  border-radius: 50%;
+}
+
+.btn-dark-mode {
+  background-color: var(--bg-dark);
+  border: 2px solid #fff;
+  border-radius: 50%;
 }
 
 .btn img {

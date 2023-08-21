@@ -1,24 +1,19 @@
-import { useState } from "react";
 import "./style.css";
 
-export default function Header() {
-  const [isDarkMode, setIsDarkmode] = useState(false);
-
+export default function Header(props) {
   const moonIcon = "assets/moon.png";
   const sunIcon = "assets/sun.png";
 
-   const toggleDarkMode = () => {
-    setIsDarkmode(!isDarkMode);
-  };
-
   return (
-    <header className={isDarkMode ? "dark-mode" : "light-mode"}>
+    <header className={props.isDarkMode ? "light-mode" : "dark-mode"}>
       <img className="logo-header" src="assets/logo.png" alt="Logo" />
       <button
-        onClick={toggleDarkMode}
-        className={isDarkMode ? "btn btn-dark-mode" : "btn btn-light-mode"}
+        onClick={props.toggleDarkMode}
+        className={
+          props.isDarkMode ? "btn btn-light-mode" : "btn btn-dark-mode"
+        }
       >
-        <img src={isDarkMode ? sunIcon : moonIcon} alt="moon icon" />
+        <img src={props.isDarkMode ? moonIcon : sunIcon} alt="moon icon" />
       </button>
     </header>
   );

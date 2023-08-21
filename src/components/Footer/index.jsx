@@ -1,8 +1,8 @@
 import "./style.css";
 
-export default function Footer() {
+export default function Footer(props) {
   return (
-    <footer className="footer-dark-mode">
+    <footer className={props.isDarkMode ? "footer-light-mode" : "footer-dark-mode"}>
       <img className="footer-logo" src="assets/logo.png" alt="logo" />
       <p>
         Ajudamos a criar uma personalidade digital construindo sua marca no

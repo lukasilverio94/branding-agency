@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 import Card from "../Card";
 import "./style.css";
 
-export default function WorkExperienceSection() {
+export default function WorkExperienceSection(props) {
   // BANCO DE DADOS CARDS:
   const workExperienceData = [
     {
@@ -28,11 +28,17 @@ export default function WorkExperienceSection() {
     },
   ];
 
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
   return (
-    <main id="work-experience-section" className="main-dark-mode">
-      <div id="header-work-experiences" className="container-dark-mode">
+    <main
+      id="work-experience-section"
+      className={props.isDarkMode ? "main-light-mode" : "main-dark-mode"}
+    >
+      <div
+        id="header-work-experiences"
+        className={
+          props.isDarkMode ? "container-light-mode" : "container-dark-mode"
+        }
+      >
         <h2>Experiências De Trabalho</h2>
         <p>
           Há mais de 10 anos no mercado de Branding, Desing Gráfico, Criação de
@@ -42,16 +48,21 @@ export default function WorkExperienceSection() {
       </div>
       {/* cards */}
       <div className="cards">
-      {workExperienceData.map((item, index) => ( //map() para percorrer os itens da coleção de arrays e aplica uma função a cada um deles
-          <Card
-            key={index} // usar único key por card.
-            date={item.date}
-            title={item.title}
-            company={item.company}
-            paragraph={item.paragraph}
-          />
-        ))}
-        
+        {workExperienceData.map(
+          (
+            item,
+            index //map() para percorrer os itens da coleção de arrays e aplica uma função a cada um deles
+          ) => (
+            <Card
+              isDarkMode={props.isDarkMode}
+              key={index} // usar único key por card.
+              date={item.date}
+              title={item.title}
+              company={item.company}
+              paragraph={item.paragraph}
+            />
+          )
+        )}
       </div>
     </main>
   );

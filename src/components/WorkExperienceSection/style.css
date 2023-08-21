@@ -21,7 +21,7 @@
   text-align: center;
   font-size: 2.3rem;
   padding-bottom: 1.2rem;
-  margin-bottom: 1.2rem;  
+  margin-bottom: 1.2rem;
   position: relative;
 }
 /* yellow line under h2 */
@@ -46,12 +46,15 @@
   color: #cccccc;
 }
 .container-dark-mode p {
-  color: #cccccc;
+  color: var(--card-text-paragraph);
 }
 .container-light-mode h2 {
   color: var(--text-primary);
 }
 
+.container-light-mode p {
+  color: var(--text-primary);
+}
 /* CARDS CONTAINER */
 .cards {
   display: flex;

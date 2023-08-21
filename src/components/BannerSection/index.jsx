@@ -1,9 +1,9 @@
 import bannerImage from "../../imageBanner/banner.png"; // Use relative import path
 import "./style.css";
 
-export default function BannerSection() {
+export default function BannerSection(props) {
   return (
-    <section id="banner-container" className="bg-dark-mode">
+    <section id="banner-container" className={props.isDarkMode ? "bg-light-mode" : "bg-dark-mode"}>
       <div
         className="img-banner"
         style={{

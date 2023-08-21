@@ -1,4 +1,4 @@
-.card {
+#card {
   width: 100%;
   min-width: 250px;
   min-height: 350px;
@@ -10,10 +10,11 @@
   padding: 3rem 1.2rem;
 }
 
-.card p:last-child {
+#card p:last-child {
   margin-top: 0.7rem;
 }
-.card h2 {
+
+#card h2 {
   font-weight: 800;
   font-size: 1.7rem;
 }
@@ -22,7 +23,7 @@
   text-transform: uppercase;
 }
 
-.card:hover {
+#card:hover {
   background-color: var(--yellow);
   border: 2px solid #edecec;
   box-shadow: none;
